@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div>
+      <% include ./header.ejs %>
+    </div>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <% info.forEach(function(info){%>
+      <li><strong>name:</strong><%=info.name %>
+        <strong>age:</strong><%=info.age %></li>
+    <% }) %>
+
+    <div>
+      <% include ./footer.ejs %>
+    </div>
+  </body>
+</html>
