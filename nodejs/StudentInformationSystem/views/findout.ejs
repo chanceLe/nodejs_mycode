@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= title%></title>
+  </head>
+  <body>
+    <p>
+      The result data:
+    </p>
+    <% info.forEach(function(info){   %>
+
+        <p> <b>Name:</b><%= info.name %> </p>
+        <hr>
+
+    <%  }) %>
+  </body>
+</html>

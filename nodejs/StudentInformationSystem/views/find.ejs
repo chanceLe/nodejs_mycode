@@ -5,16 +5,16 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <p>看看有没有 </p>
-  <ul>
+    <p>The result:</p>
+
    <% info.forEach(function(info){%>
-
-    <li><strong>name:</strong><%=info.name %> </li>
-    <li><strong>age:</strong><%=info.age %></li>
-    <li><strong>age:</strong><%=info.email %></li>
-    <li><strong>age:</strong><%=info.phone %></li>
-
-  <% }) %>
+<ul>
+    <li><strong>Name:</strong><%=info.name %> </li>
+    <li><strong>Age:</strong><%=info.age %></li>
+    <li><strong>Email:</strong><%=info.email %></li>
+    <li><strong>PhoneNumber:</strong><%=info.phone %></li>
 </ul>
+  <% }) %>
+
   </body>
 </html>

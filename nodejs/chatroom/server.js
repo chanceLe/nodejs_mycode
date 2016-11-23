@@ -12,11 +12,6 @@ io.on('connection',function(socket){
   })
 })
 
-io.sockets.on('connection',function(socket){
-  socket.on("ferret",function(name,fn){
-    fn('woot');
-  })
-})
-http.listen(3030,function(){
+http.listen(3000,function(){
   console.log("listenning on 3000 port");
 })

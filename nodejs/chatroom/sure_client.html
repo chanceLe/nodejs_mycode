@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>chat room</title>
+    <link href="http://libs.baidu.com/fontawesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <style media="screen">
       *{  margin:0; padding:0;  }
       body{ font:13px;}
@@ -32,6 +33,11 @@
        $('form').submit(function(){
          socket.emit('chat message',$('#m').val());
          $('#m').val('');
+         socket.emit("ferret","tobi",function(data){
+           console.log(data);
+           if(data){ $("ul li:last").append('<i class="fa fa-check-circle" aria-hidden="true"></i>'
+) }
+         })
          return false;
        });
 

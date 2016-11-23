@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>add</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Student Information System</h1>
+    <p>Welcome to <%= title %></p>
+
+
+    <form action="/update" method="post">
+    要更新的姓名：<input type="text" name="oldname">
+      <hr>
+      姓名：<input type="text" name="name">  <br>
+      年龄：<input type="number" name="age"><br>
+      电话：<input type="text" name="phone"><br>
+      <p>
+      E-mail:<input type="email" name="email"></p>
+      <button type="submit">提交</button><br>
+    </form>
+  </body>
+</html>
